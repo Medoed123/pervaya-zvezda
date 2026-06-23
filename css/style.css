@@ -1,0 +1,1054 @@
+html, body {
+    font-family: 'Igra Sans';
+}
+ul {
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: "Igra Sans";
+  src: url("../font/IgraSans.otf");
+}
+
+.hamburger-menu{
+    display: none;
+    border-bottom: 1px solid #000;
+    height: 46px;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+  width: 30px;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  right: 0;
+  transform: rotate(0);
+  width: 30px;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  right: 0;
+  width: 30px;
+}
+
+#menu__toggle:checked ~ .menu__btn{
+    width: 50px;
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+  background: #fff;
+color: white;
+text-align: center;
+}
+
+.menu__btn {
+      display: flex;
+    align-items: center;
+    position: fixed;
+    top: 13px;
+    right: 10px;
+    width: 57px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 11;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+      display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #08391C;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #fff;
+  transition-duration: .25s;
+  box-shadow: 1px 0px 6px #08391C;
+}
+.menu_item1{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 43px;
+}
+
+.menu_item1:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.menu__box button{
+    background-color: #ffa001;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid #ffa001;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.galery{
+    width: 100%;
+    background: url(../img/back_galery.avif) center/cover no-repeat;
+}
+
+.galery img{
+    width: 100%;
+}
+
+.galery button{
+    font-family: Igra Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    color: white;
+    background-color: transparent;
+    padding: 24px 24px 24px 24px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.clients h2{
+    font-family: Igra Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+}
+
+.img_container_galery{
+    display: flex;
+    align-items: center;
+}
+.clients .client-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.clients .client-logo img{
+    padding: 20px 40px;
+    max-width: 90%;
+    transition: 0.3s;
+}
+
+@media(max-width: 640px){
+    .clients .client-logo img{
+        padding: 20px;
+    }
+}
+
+.contacts_fon{
+    width: 100%;
+    background: rgba(8, 57, 28, 0.3);
+    height: 100%;
+}
+
+.contacts{
+    width: 100%;
+    height: 100%;
+    background: url(../img/back_contact.avif) center/cover no-repeat;
+}
+
+.contact_shlem{
+    width: 100%;
+    height: 100%;
+    background: url(../img/contact_shlem.png) no-repeat;
+    background-position: 0% 100%;   
+}
+
+.contacts h2{
+    font-family: Igra Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
+    padding-top: 88px;
+    margin-bottom: 0px;
+}
+
+.wh_contact{
+    margin-left: 24px;
+}
+
+.contacts p{
+    font-family: Igra Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.right_border_1{
+    border-right: 1px solid #000;
+}
+
+.border_bottom_1{
+    border-bottom: 1px solid #000;
+    padding: 17px 17px 17px 17px;
+}
+
+.contacts h6{
+    font-family: Igra Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer h2{
+    font-family: Igra Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color:  #1E3427;
+    margin-bottom: 0px;
+    margin-top: 35px;
+}
+
+.menu_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_footer p{
+    font-family: Igra Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 43px;
+}
+
+.wh_footer{
+    margin-left: 18px;
+}
+
+.img_footer{
+    margin-top: 33px;
+}
+
+.footer_line{
+    margin-top: 19px;
+    background: #08391C;
+    width: 100%;
+    height: 2px;
+}
+
+.footer_text{
+    font-family: Igra Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #000;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+
+.menu{
+    padding-left: 57px;
+    padding-right: 57px;
+}
+
+.menu h2{
+    font-family: Igra Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 57px;
+    margin-bottom: 0px;
+}
+
+.top_menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_menu p{
+    margin-top: 64px;
+    margin-bottom: 0px;
+    font-family: Igra Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #fff;
+}
+
+.menu button{
+    font-family: Igra Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000;
+    width: 112px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 50px;
+    border: none;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background: url(../img/main_fon.avif) no-repeat;
+    background-size: 66.8%;
+    background-position: 100% 0%;
+}
+
+.main_content_logo{
+    margin-top: 130px;
+    margin-left: 75px;
+    max-width: 80%;
+}
+
+.main_content h2{
+    font-family: Igra Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: left;
+    color: #000;
+    margin-top: 25px;
+    margin-left: 75px;
+    margin-bottom: 0px;
+    max-width: 326px;
+}
+
+.main_bottom_content{
+    margin-top: 103px;
+}
+
+.one_main_bottom_content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.rec_bottom{
+    width: 45px;
+    height: 15px;
+    background: #08391C;
+    margin-right: 30px;
+}
+
+.one_main_bottom_content h3{
+    font-family: Igra Sans;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.main_content button{
+    margin-top: 22px;
+    margin-left: 75px;
+    width: 197px;
+    height: 78px;
+    font-family: Igra Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #08391C;
+    border: none;
+    border-radius: 5px;
+}
+
+.main_content h4{
+    font-family: Igra Sans;
+    font-size: 130px;
+    font-weight: 400;
+    line-height: 130px;
+    color: #FFFFFF;
+    margin-top: 115px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.main_shlem{
+    margin-top: -30px;
+}
+
+.about_line{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.right_border_2{
+    border-right: 2px solid #000;
+}
+
+.ab_shlem{
+    margin-top: -84px;
+}
+
+.our_pluses{
+    height: 296px;
+}
+
+.our_pluses h3{
+    font-family: Igra Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #000;
+    margin-top: 27px;
+    margin-left: 47px;
+    margin-bottom: 16px;
+}
+
+.one_type_plus{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 47px;
+}
+
+.our_pluses h4{
+    font-family: Igra Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.one_type_plus img{
+    margin-right: 8px;
+}
+
+.our_color{
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 39px;
+}
+
+.our_color h4{
+    margin-right: 16px;
+}
+
+.our_color img{
+    margin-left: 8px;
+}
+
+.our_pluses_table{
+    margin-top: 35px;
+    margin-left: 39px;
+}
+
+.our_pluses table{
+    width: 100%;
+}
+
+.our_pluses th{
+    font-family: Igra Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: #596955;
+}
+
+.our_pluses td{
+    font-family: Igra Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: #000;
+    padding-top: 10px;
+}
+
+.our_pluses td h5{
+    background: #08391C;
+    width: 27px;
+    height: 27px;
+    font-family: Igra Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third_plus h3{
+    margin-top: 68px !important ;
+}
+
+.third_plus h4{
+    margin-top: 40px !important ;
+    padding-right: 35px;
+}
+
+.last_plus_shlem{
+    position: absolute;
+    bottom: 33px;
+    right: 28px;
+}
+
+.last_shlem_img{
+    position: absolute;
+    left: -80px;
+    top: -73px;
+}
+
+.advantages{
+    margin-top: 160px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/adv_fon.png) no-repeat;
+    background-position: 50% 100%;
+    padding-bottom: 10%;
+}
+
+.advantages h3{
+    font-family: Igra Sans;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #08391C;
+    margin-bottom: 0px;
+}
+
+.advantages h4{
+    font-family: Igra Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+
+.advantages h5{
+    font-family: Igra Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: auto;
+    color: #08391C;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.last_adv h3{
+    margin-top: 160px;
+}
+
+.adv_zakaz{
+    width: 158px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #08391C;
+    color: white;
+    font-family: Igra Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    border: none;
+    margin-top: 50%;
+}
+
+.adv_que{
+    width: 221px;
+    height: 70px;
+    border: 2px solid #08391C;
+    background: transparent;
+    border-radius: 5px;
+    font-family: Igra Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #08391C;
+    margin-top: 15px;
+}
+
+@media(max-width: 1430px){
+    .main_shlem {
+        margin-top: -60px;
+    }
+}
+
+@media(max-width: 1600px){
+    .adv_zakaz{
+        margin-top: 70%;
+    }
+    .main_content_logo{
+        width: 370px;
+        max-width: 100%;
+    }
+    .main_content h4{
+        margin-top: 104px;
+    }
+}
+
+@media(max-width: 1400px){
+    .main_content_logo {
+        width: 310px;
+    }
+    .main_content h4{
+        font-size: 95px;
+        margin-top: 104px;
+    }
+    .main_shlem{
+        max-width: 90%;
+        margin-top: -72px;
+    }
+    .main_bottom_content{
+        margin-top: 60px
+    }
+    .top_menu p{
+        font-size: 14px;
+    }
+    .ab_shlem{
+        max-width: 120%;
+        margin-top: -52px;
+    }
+    .last_plus_shlem{
+        right: 1px;
+    }
+    .adv_zakaz {
+        margin-top: 79%;
+    }
+    .last_shlem_img{
+        width: 404px;
+        left: -64px;
+        top: 1px;
+    }
+    .contacts h6{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1200px){
+    .main_content_logo {
+        width: 250px;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .hamburger-menu h2{
+        font-family: Igra Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        margin-left: 23px;
+        margin-top: 30px;
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        background: url(../img/main_fon2.avif) center/cover no-repeat;
+    }
+    .main_content_logo{
+        margin-left: 65px;
+    }
+    .main_content h2{
+        margin-left: 65px;
+        font-size: 24px;
+    }
+    .one_main_bottom_content h3{
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .main_content button{
+        font-size: 25px;
+        line-height: 25px;
+        height: 64px;
+    }
+    .main_content h4 {
+        font-size: 73px;
+        margin-top: 97px;
+        margin-left: 5px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+    }
+    .ab_shlem {
+        max-width: 60%;
+        margin-top: 0px;
+    }
+    .last_plus_shlem{
+        right: 28px;
+    }
+    .advantages h4{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .adv_zakaz {
+        margin-top: 100%;
+    }
+    .contact_shlem{
+        background: none;
+    }
+    .footer h2{
+        font-size: 28px;
+    }
+    .menu_footer p{
+        margin-top: 47px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 992px){
+    .main_content_logo {
+        width: 200px;
+    }
+    .main_content_logo {
+        margin-left: 0;
+    }
+    .main_content h2 {
+        margin-left: 0;
+        font-size: 23px;
+        line-height: 32px;
+    }
+    .rec_bottom{
+        width: 30px;
+        height: 10px;
+        margin-right: 20px;
+    }
+    .one_main_bottom_content h3 {
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .main_content button{
+        margin-left: 5px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .main_bottom_content{
+        margin-top: 25px;
+    }
+    .main_shlem {
+        max-width: 100%;
+        margin-top: 0px;
+    }
+    .main_content h4 {
+        margin-top: 85px;
+    }
+    .ab_shlem {
+        max-width: 100%;
+        margin-top: 0px;
+    }
+    .third_plus h4{
+        padding-right: 0px;
+    }
+    .advantages{
+        background: none;
+        margin-top: 50px;
+    }
+    .advantages h4{
+        margin-top: 31px;
+    }
+    .adv_zakaz {
+        margin-top: 30px;
+    }
+    .advantages h4 {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    .last_adv h3{
+        margin-top: 0px;
+    }
+    .menu_footer p {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 768px){
+    .main {
+        width: 100%;
+        height: 100%;
+        background: url(../img/main_fon3.png) center / cover no-repeat;
+    }
+    .main_content h2 {
+        margin-left: 0;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .rec_bottom {
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
+    }
+    .one_main_bottom_content h3 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .one_main_bottom_content{
+        margin-bottom: 20px;
+    }
+    .main_content button {
+        font-size: 18px;
+        line-height: 18px;
+        height: 46px;
+    }
+    .main_shlem {
+        max-width: 90%;
+        margin-top: 0px;
+    }
+    .main_content h4 {
+        margin-top: 80px;
+        margin-left: 25px;
+    }
+    .our_pluses h3{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .one_type_plus{
+        margin-left: 0px;
+    }
+    .third_plus h3{
+        margin-top: 0px !important;
+    }
+    .last_plus_shlem{
+        right: 1px;
+    }
+    .last_shlem_img{
+        top: -73px;
+    }
+    .advantages h4 {
+        font-size: 14px;
+        line-height: 17.2px;
+    }
+}
+
+@media(max-width: 576px){
+    .main_content h4{
+        font-size: 40.65px;
+        line-height: 40.65px;
+        margin-left: 0px;
+    }
+    .main_content_logo{
+        width: 123px;
+        max-width: 100%;
+        margin-top: 110px;
+    }
+    .main_content h4{
+        margin-top: 105px;
+    }
+    .main_content h2{
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    .main_content button{
+        margin-left: 0px;
+        width: 114.78px;
+        height: 44.78px;
+        font-family: Igra Sans;
+        font-size: 17.36px;
+        font-weight: 400;
+        line-height: 17.36px;
+        margin-top: 37px;
+        position: relative;
+        z-index: 2;
+    }
+    .main_shlem{
+        display: none;
+    }
+    .mobile_img{
+        width: 323px;
+        margin-top: -80px;
+    }
+    .right_border_2{
+        border-right: 0px;
+    }
+    .about_line{
+        display: none;
+        background: none;
+    }
+    .our_pluses{
+        width: 100%;
+        height: 202px;
+        border: 1px solid #000000;
+    }
+    .ab_shlem{
+        width: 317px;
+        max-width: 100%;
+        margin-top: -49px;
+    }
+    .our_pluses_table{
+        margin-left: 5px;
+    }
+    .our_color{
+        margin-left: 5px;
+    }
+    .our_pluses h3{
+        font-size: 16px;
+        line-height: 20.08px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .third_plus h4{
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    .third_plus h4{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .our_pluses h4{
+        font-size: 14px;
+        line-height: 18.2px;    
+    }
+    .last_plus_shlem{
+        right: 5px;
+    }
+    .last_shlem_img{
+        width: 337px;
+        top: -140px;
+    }
+    .advantages h3{
+        margin-top: 30px;
+        font-family: Igra Sans;
+        font-size: 21.89px;
+        font-weight: 400;
+        line-height: 21.89px;
+    }
+    .advantages h5{
+        margin-top: 20px;
+    }
+    .adv_mob_line{
+        width: 100%;
+        height: 2px;
+        background: #08391C;
+        margin-top: 33px;
+    }
+    .adv_zakaz{
+        height: 44.78px;
+        font-size: 17.36px;
+        font-weight: 400;
+        line-height: 17.36px;
+    }
+    .adv_que{
+        height: 44.78px;
+        font-size: 17.36px;
+        font-weight: 400;
+        line-height: 17.36px;
+    }
+    .advantages{
+        padding-bottom: 0px;
+    }
+    .contacts h2{
+        padding-top: 3rem;
+    }
+    .right_border_1{
+        border-right: 0px;
+    }
+    .wh_contact {
+        margin-left: 12px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer h2{
+        text-align: center;
+    }
+    .sm_center{
+        text-align: center !important;
+    }
+    .menu_footer{
+        display: block;
+    }
+    .img_footer{
+        margin-top: 10px;
+    }
+    .wh_footer {
+        margin-left: 10px;
+    }
+    .menu_footer p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}

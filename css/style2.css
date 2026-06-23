@@ -1,0 +1,2043 @@
+
+html, body {
+    font-family: 'TT Commons';
+
+}
+ul {
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "Golos";
+  src: url("../font/GolosText-Bold.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Golos";
+  src: url("../font/GolosText-ExtraBold.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Golos";
+  src: url("../font/GolosText-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Golos";
+  src: url("../font/TTCommons-Light.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Golos";
+  src: url("../font/GolosText-Medium.ttf");
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+  width: 30px;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  right: 0;
+  transform: rotate(0);
+  width: 30px;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  right: 0;
+  width: 30px;
+}
+
+#menu__toggle:checked ~ .menu__btn{
+    width: 50px;
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+  background: #fff;
+color: white;
+text-align: center;
+}
+
+.menu__btn {
+      display: flex;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 57px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 11;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+      display: block;
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    background-color: #000;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #fff;
+  transition-duration: .25s;
+  box-shadow: 1px 0px 6px rgb(123, 42, 24);
+}
+.menu_item1{
+    color: black;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.menu_item1:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.menu__box button{
+    width: 80%;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    background: #7B2A18;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu{
+
+
+}
+
+.menu a{
+    text-decoration: none;
+
+}
+
+.menu p{
+    margin-top: 17px;
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #201F2D;
+    margin-bottom: 0px;
+}
+
+.menu button{
+    font-family: Golos;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    background: #7B2A18;
+    width: 130px;
+    height: 56px;
+    border: none;
+}
+
+.logo_menu{
+    width: 414px;  
+    max-width: 100%;      
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+@media(max-width: 992px){
+    .hamburger-menu{
+    display: block;
+}
+}
+
+.main h2{
+    font-family: Tektur;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    color: black;
+    margin-top: 28%;
+}
+
+.main_logo_yas{
+    width: 419px;
+    max-width: 100%;
+}
+
+.main p{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #000;
+    max-width: 489px;
+    margin-top: 30px;
+}
+
+.main button{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    width: 331px;
+    height: 72px;
+    background: #BF391B;
+    border: none;
+    margin-top: 30px;
+}
+
+.main_yas_svg{
+    width: 703px;
+    max-width: 100%;
+}
+
+.about h2{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    color: #000;
+}
+
+.about h3{
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #000;
+    margin-top: 40px;
+    max-width: 506px;
+}
+
+.about h3 span{
+    font-weight: 700;
+}
+
+.vert_line_about{
+    display: inline-block;
+    height: 112px;
+    border: 3px solid #7B2A18;
+    margin-right: 16px;
+}
+
+.about h4{
+    font-family: Tektur;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28.6px;
+    text-align: left;
+    color: #7B2A18;
+}
+
+.vert_line_about2{
+    height: 131px;
+}
+
+.mt_ab_2{
+    margin-top: 80px;
+}
+
+.goods h2{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    color: black;
+}
+
+.slide{
+    width: 100%;
+    height: 195px;
+    border: 3px solid #2E2D3E;
+    padding: 24px 24px 24px 24px;
+}
+
+.goods h3{
+    font-family: Tektur;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #BF391B;
+}
+
+.goods h4{
+    margin-top: 10px;
+    font-family: Tektur;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 32.5px;
+    text-align: left;
+    color: #2E2D3E;
+}
+
+.owl-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-next{
+    margin-right: -100px;
+    margin-top: -160px;
+}
+
+.owl-prev{
+    margin-left: -100px;
+    margin-top: -160px;
+}
+
+.first_btn_goods{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    background: white;
+    color: #7B2A18;
+    border: 2px solid #7B2A18;
+    width: 244px;
+    height: 72px;
+}
+
+.first_btn_goods img{
+    margin-right: 14px;
+}
+
+.second_btn_goods{
+    width: 248px;
+    height: 72px;
+    background: #7B2A18;
+    color: white;
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+}
+
+.our_work h2{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    color: black;
+
+}
+
+.btn_work{
+    font-family: Tektur;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    background: transparent;
+    color: #BF391B;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #BF391B;
+}
+
+.our_work h3{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: black;
+    margin-top: 10px;
+}
+
+.our_work h4{
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: black;
+    margin-top: 24px;
+}
+
+.our_work h5{
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: black;
+    margin-top: 20px;
+}
+
+.last_btn_work{
+    width: 150px;
+    height: 54px;
+    background: #2E2D3E;
+    font-family: Golos;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: white;
+    border: none;
+}
+
+.contacts h2{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    color: black;
+}
+
+.contacts h3{
+    font-family: Golos;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: rgba(46, 45, 62, 0.6);
+    margin-top: 24px;
+}
+
+.contacts h4{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: black;
+}
+
+.wh_img_con{
+    margin-top: 33px;
+    width: 40px;
+    margin-right: 12px;
+    margin-top: -10px;
+    vertical-align: bottom;
+}
+
+.con_whats{
+    display: inline-block;
+    margin-top: 41px;
+}
+
+.contacts h6{
+    font-family: Tektur;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32.5px;
+    text-align: left;
+    color: black;
+    margin-bottom: 35px;
+}
+
+summary {
+  position: relative;
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: url(../img/first_strel.svg);
+  position: absolute;
+  right: 20px;
+  top: 0;
+  color: red;
+}
+
+details[open]>summary::before {
+  content: url(../img/second_strel.svg);
+}
+
+.contacts summary{
+    font-family: Golos;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: #201F2D;
+}
+
+.pad_div_con{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid rgba(123, 42, 24, 0.3);
+}
+
+.contacts p{
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-family: Golos;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: rgba(46, 45, 62, 0.7);
+}
+
+.foot{
+    background: rgba(32, 31, 45, 1);
+}
+
+.foot p{
+    font-family: Tektur;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.foot h3{
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 28px;
+    margin-bottom: 0px;
+}
+
+.grey_foot{
+    font-family: Golos;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: rgba(196, 196, 196, 1);
+    margin-top: 28px;
+}
+
+.foot h4{
+    font-family: Tektur;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+}
+
+.foot h5{
+    font-family: Golos;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.foot h6{
+    font-family: Golos;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.catalog h2{
+    font-family: Golos;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(27, 31, 59, 0.4);
+}
+
+.catalog h2 img{
+    margin-right: 10px;
+}
+
+.catalog h1{
+    font-family: Tektur;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: left;
+    color: black;
+}
+
+.one_catalog_thing{
+    width: 100%;
+    border: 3px solid rgba(46, 45, 62, 1);
+    padding: 32px 32px 32px 32px;
+    min-height: 245px;
+}
+
+.catalog h3{
+    font-family: Tektur;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 32.5px;
+    text-align: left;
+    color: rgba(46, 45, 62, 1);
+    margin-bottom: 0px;
+}
+
+.catalog h4{
+    font-family: Tektur;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: rgba(191, 57, 27, 1);
+    margin-bottom: 0px;
+}
+
+.catalog h5{
+    font-family: Golos;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: black;
+    margin-top: 24px;
+}
+
+.catalog p{
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: black;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+
+.one_catalog_thing img{
+    margin-bottom: 24px;
+    width: 100%;
+    max-height: 350px;
+}
+
+.catalog button{
+    background: rgba(191, 57, 27, 1);
+    margin-top: 32px;
+    width: 331px;
+    height: 72px;
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    border:none;
+}
+
+.over_buy h2{
+    font-family: Tektur;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32.5px;
+    text-align: left;
+    color: black;
+}
+
+.one_over_buy{
+    width: 100%;
+    border: 2px solid rgba(46, 45, 62, 0.6);
+    padding: 24px 24px 24px 24px;
+}
+
+.one_over_buy img{
+    width: 100%;
+}
+
+.one_over_buy h3{
+    font-family: Tektur;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23.4px;
+    text-align: left;
+    color: rgba(46, 45, 62, 1);
+    margin-top: 18px;
+}
+
+.one_over_buy_btn{
+    border: 2px solid rgba(123, 42, 24, 1);
+    width: 135px;
+    height: 81px;
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(123, 42, 24, 1);
+    max-width: 100%;
+    background: transparent;
+    margin-top: 65%;
+
+}
+
+.one_over_buy_btn img{
+    margin-left: 16px;
+}
+
+.main_tovar{
+    width: 100%;
+    background: url(../img/fon_tovar.avif) center/cover no-repeat;
+}
+
+.main_tovar_img{
+    max-width: 100%;
+}
+
+.main_tovar h2{
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.main_tovar h2 img{
+    margin-right: 8px;
+}
+
+.main_tovar h1{
+    margin-top: 80px;
+    font-family: Tektur;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 78px;
+    text-align: left;
+    color: white;
+    margin-bottom: 120px;
+}
+
+.one_main_tovar_pre{
+    margin-top: 30px;
+}
+
+.main_tovar h3{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: left;
+    color: white;
+}
+
+.btn_group_main_tovar{
+    margin-top: 80px;
+}
+
+.first_btn_group_main_tovar{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgba(191, 57, 27, 1);
+    background: white;
+    border:none;
+    width: 229px;
+    height: 72px;
+    margin-right: 24px;
+}
+
+.second_btn_group_main_tovar{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white ;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 1);
+    width: 244px;
+    height: 72px;
+}
+
+.second_btn_group_main_tovar img{
+    margin-right: 12px;
+}
+
+.har_tovar{
+    position: relative;
+}
+
+.har_tovar h2{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.one_har_tovar{
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid rgba(123, 42, 24, 1);
+    padding: 20px 20px 20px 20px;
+}
+
+.one_har_tovar h3{
+    font-family: Tektur;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.8px;
+    color: rgba(123, 42, 24, 1);
+    margin-bottom: 16px;
+}
+
+.one_har_tovar h4{
+    margin-bottom: 0px;
+    font-family: Golos;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: black;
+}
+
+.har_tovar button{
+    width: 199px;
+    height: 72px;
+    color: white;
+    background: rgba(46, 45, 62, 1);
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.har_tovar_btn2{
+    width: 276px !important;
+    background: rgba(191, 57, 27, 1) !important;
+}
+
+.har_tovar_absolute{
+    width: 342px;
+    background: rgba(123, 42, 24, 1);
+    padding: 27px 27px 27px 27px;
+    top: 20%;
+    left: 0px;
+    position: absolute;
+    z-index: 10;
+}
+
+.har_tovar_absolute p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: Golos;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: left;
+    color: white;
+}
+
+.pre_har_tovar{
+    background: rgba(123, 42, 24, 1);
+}
+
+.pre_har_tovar h2{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    color: white;
+}
+
+.pre_har_bottom{
+    background: white;
+    padding: 8px 16px 8px 16px;
+    font-family: Tektur;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(123, 42, 24, 1);
+    margin-top: 12px;
+    width: max-content;
+}
+
+.pre_har_tovar p{
+    font-family: Tektur;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: left;
+    color: white;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left: 16px;
+}
+
+.pre_har_tovar img{
+    vertical-align: baseline;
+}
+
+.complect_tovar h2{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.first_comlect_btn{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(123, 42, 24, 1);
+    width: 244px;
+    height: 72px;
+    border: 2px solid rgba(123, 42, 24, 1);
+    background: transparent;
+    max-width: 100%;
+    margin-top: 100%;
+}   
+
+.first_comlect_btn img{
+    margin-right: 14px;
+    margin-top: -2px;
+}
+
+.second_comlect_btn{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: white;
+    background: rgba(123, 42, 24, 1);
+    width: 155px;
+    height: 72px;
+    margin-top: 15px;
+    border: none;
+}
+
+.vert_line_complect{
+    height: 143px;
+    border: 3px solid rgba(191, 57, 27, 1);
+    width: 0;
+}
+
+.one_complect_tovar{
+    margin-top: 25px;
+}
+
+.compact_img_tovar{
+    max-width: 100%;
+}
+
+.complect_tovar p{
+    font-family: Tektur;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23.4px;
+    text-align: left;
+    color: rgba(46, 45, 62, 1);
+    margin-top: 20%;
+}
+
+.more_tovar_har{
+    max-width: 100%;
+}
+
+.logo_mob{
+    width: 160px;
+    margin-top: 22px;
+    margin-left: 30px;
+}
+
+.menu_item1{
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+}
+.btn_group_main_tovar h4{
+    font-family: Golos;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    display: inline-block;
+    color: white;
+    margin-right: 40px;
+    margin-bottom: 0px;
+}
+
+.one_catalog_thing_detector{
+    min-height: 400px;
+}
+
+.main_tovar_fpv{
+    background: url(../img/fon_tf.avif) center/cover no-repeat;
+}
+
+.main_tovar_fpv h1{
+    color: #000;
+    margin-top: 56px;
+    margin-bottom: 32px;
+}
+
+.main_tovar_fpv h5{
+    margin-top: 24px;
+    margin-bottom: 0px;
+    font-family: Tektur;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: black;
+}
+
+.main_tovar_fpv h3{
+    font-family: Tektur;
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 50.7px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: rgba(123, 42, 24, 1);
+}
+
+.main_tovar_fpv h2{
+    color: black;
+}
+
+.btn_group_main_tovar_fpv{
+    margin-top: 56px;
+}
+
+.main_tovar_fpv h4{
+    color: rgba(123, 42, 24, 1);
+}
+
+.first_btn_group_main_tovar_fpv{
+    background: rgba(123, 42, 24, 1);
+    color: white;
+}
+
+.main_tovar_img_fpv{
+    margin-top: 15%;
+}
+
+.second_btn_group_main_tovar_fpv{
+    background: white !important;
+    border: 2px solid rgba(123, 42, 24, 1) !important;
+}
+
+.one_main_tovar_pre_fpv{
+    margin-top: 0px;
+}
+
+.pre_har_tovar_fpv p{
+    display: inline-block;
+    max-width: 317px;
+    margin-left: 0px;
+    margin-top: 24px;
+}
+
+.pre_har_tovar_fpv_p{
+  
+}
+
+.pre_har_tovar_fpv_p1{
+    text-align: left !important;
+    margin-right: 25px !important;
+}
+
+.pre_har_bottom_fpv{
+    display: inline-block;
+}
+
+.har_tovar_kompl_fpv{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.har_tovar_kompl_fpv h6{
+    text-align: left;
+    font-family: Golos;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+
+}
+
+.main_tovar_podav h3{
+    font-family: Tektur;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+    color: rgba(123, 42, 24, 1);
+}
+
+.one_main_tovar_pre_podav{
+    margin-top: 30px;
+}
+
+.main_tovar_anti{
+    background: url(../img/fon_anti.avif) center/cover no-repeat;
+}
+
+.main_tovar_anti h1{
+    margin-bottom: 50px;
+}
+
+.main_tovar_anti h5{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    color: white;
+    max-width: 488px;
+}
+
+.anti_h2_har{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.anti_izg{
+    font-family: Tektur;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32.5px;
+    text-align: left;
+    color: rgba(123, 42, 24, 1);
+}
+
+.anti_disc{
+    font-family: Tektur;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.anti_img{
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: -2px;
+}
+
+.anti_ul{
+    display: inline-block;
+    margin-right: 24px;
+    margin-top: 24px;
+    font-family: Tektur;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+
+}
+
+.anti_br{
+    display: none;
+}
+
+.pre_har_tovar_anti p{
+    margin-left: 0px;
+    margin-top: 24px;
+}
+
+.pre_har_tovar_anti h2{
+    text-align: center;
+}
+
+.second_btn_goods1{
+    color: rgba(123, 42, 24, 1);
+    background: white;
+}   
+
+.first_btn_goods1{
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 1)
+}
+
+.first_btn_goods1 img{
+    margin-top: 5px;
+}
+
+.our_choose h2{
+    font-family: Tektur;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+
+}
+
+.one_chose{
+    width: 100%;
+    border: 2px solid rgba(123, 42, 24, 1);
+    padding: 20px 20px 20px 20px;
+}
+
+.one_chose h3{
+    font-family: Tektur;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(123, 42, 24, 1);
+}
+
+.one_chose img{
+    max-width: 100%;
+}
+
+.one_text_ch{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.one_chose{
+    min-height: 160px;
+}
+
+.one_ch_btn{
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    width: 228px;
+    height: 72px;
+    background: #BF391B;
+    border: none;
+}
+
+.mt_btns_choose{
+    margin-top: 10%;
+}
+
+.buy_some_one_tovar {
+    font-family: Golos;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: white;
+    background: radial-gradient(96.17% 143.86% at 12.5% 49.57%, #000000 19.07%, #BF391B 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    min-width: 300px;
+    max-width: 100%;
+    min-height: 72px;
+    border: none;
+    animation: gradientAnimation 10s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.one_har_tovar h3 span{
+    font-family: Golos;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #000;
+}
+
+.one_har_details{
+    font-family: Golos;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #000;
+    margin-top: 10px;
+}
+
+.one_har_tovar summary::before{
+    right: 0px !important;
+}
+
+.one_har_details{
+    font-family: Golos;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+
+}
+
+@media(max-width: 1400px){
+    .anti_br{
+        display: block;
+    }
+    .one_chose h3
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media(max-width: 1200px){
+    .center_xl{
+        text-align: center !important;
+    }
+    .menu button{
+        max-width: 100%;
+    }
+
+    .main h2{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .main button{
+        margin-top: 15px;
+    }
+
+    .about h4{
+        font-size: 20px;
+    }
+
+    .about h3{
+        font-size: 13px;
+    }
+
+    .contacts h4{
+        font-size: 14px;
+    }
+
+    .contacts summary{
+        padding-right: 25px;
+    }
+    .foot h6{
+        font-size: 14px;
+    }
+    .catalog h4{
+        font-size: 17px;
+    }
+    .more_tovar_har{
+        margin-top: 40%;
+    }
+    .main_tovar h3{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 992px){
+    .main h2{
+        font-size: 13px;
+    }
+    .main p{
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .main button{
+        margin-top: 5px;
+        max-width: 100%;
+    }
+    .h3_ab{
+        max-width: 160px !important;
+    }
+    .about h4{
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .more_tovar_har{
+        margin-top: 0%;
+    }
+    .first_comlect_btn{
+        margin-top: 5%;
+    }
+    header{
+        position: fixed;
+        height: 70px;
+        background: white;
+        width: 100%;
+        z-index: 11
+    }
+    .catalog h2{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 768px){
+    .left_md{
+        text-align: left !important;
+    }
+    .pre_har_tovar_fpv_p{
+    margin-left: 0px !important;
+    }
+
+    .pre_har_tovar_fpv_p1{
+        text-align: left !important;
+        margin-right: 0px !important;
+    }
+    .main{
+        background: url(../img/mob_fon.avif) center/cover no-repeat;
+        height: 775px;
+    }
+    .main h2{
+        color: white;
+        font-size: 15px;
+    }
+    .main p{
+        font-family: Golos;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: right;
+    color: white;
+    width: 246px;
+    display: inline-block;
+    margin-top: 60px;
+    }
+    .main button{
+        margin-top: 50%;
+        background: white;
+        color: rgba(123, 42, 24, 1);
+        font-weight: 700;
+    }
+    .md_center{
+        text-align: center;
+    }
+    .about h3{
+        margin-top: 30px;
+        font-family: Golos;
+        font-size: 16px;    
+        line-height: 19.2px;
+
+    }
+    .vert_line_about{
+        height: 170px;
+    }
+    .about h4{
+        font-family: Tektur;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        text-align: left;
+        margin-top: -30px;
+    }
+    .h3_ab{
+        max-width: 230px !important;
+    }
+    .slide{
+        margin-top: 18px;
+        display: none;
+    }
+    .btn_bloshe_new{
+        font-family: Golos;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        margin-top: 40px;
+        background: transparent;
+        border:none;
+    }
+    .catalog h4{
+        text-align: left;
+    }
+    .main_tovar h1{
+        font-size: 40px;
+        line-height: 49px;
+    }
+    .main_tovar{
+        position: relative;
+    }
+    .main_tovar_img_mob{
+        position: absolute;
+        width: 131px;
+        right: 0px;
+        bottom: 30%;
+    }
+    .btn_group_main_tovar h4{
+        display: block;
+        font-family: Golos;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .har_tovar h2{
+        font-size: 20px;
+        line-height: 29px;
+    }
+}
+
+@media(max-width: 576px){
+    .har_tovar_kompl_fpv h6{
+        font-size: 16px;
+    }
+    .main button{
+        margin-top: 65%;
+    }
+    .main h2{
+        text-align: center;
+    }
+    .first_btn_goods{
+        width: 55px;
+        height: 55px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 16px;
+    }
+    .first_btn_goods img{
+        margin-right: 0px;
+
+    }
+    .second_btn_goods{
+        display: inline-block;
+        width: 219px;
+        height: 55px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .left_sm{
+        text-align: left !important;
+    }
+    .mt_btns_choose{
+        margin-top: 0px;
+    }
+    .one_ch_btn{
+        width: 219px;
+        height: 55px;
+    }
+    .contacts h3{
+        margin-top: 16px;
+    }
+    .contacts h4{
+        margin-bottom: 0px;
+    }
+    .contacts h4{
+        font-size: 20px;
+    }
+    .sm_center{
+        text-align: center;
+    }
+    .foot p{
+        text-align: center;
+    }
+    .foot h3{
+        text-align: center;
+    }
+    .grey_foot{
+        text-align: center;
+        margin-top: 8px;
+    }
+    .foot h4{
+        font-family: Tektur;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+    .catalog h1{
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .catalog button{
+        max-width: 100%;
+    }
+    .one_over_buy_btn{
+        margin-top: 0px;
+    }
+    .main_tovar h1{
+        font-size: 30px;
+        line-height: 39px;
+        margin-top: 33px;
+    }
+    .main_tovar h3{
+        font-size: 18.82px;
+
+    }
+    .btn_group_main_tovar{
+        margin-top: 55px;
+    }
+    .first_btn_group_main_tovar{
+        font-size: 18px;
+        line-height: 24px;
+        width: 179px;
+        height: 56px;
+        font-weight: 600;
+    }
+    .second_btn_group_main_tovar{
+        width: 56px;
+        height: 56px;
+    }
+    .second_btn_group_main_tovar img{
+        margin-right: 0px;
+    }
+    .har_tovar_absolute p{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .har_tovar_absolute{
+        padding: 16px 16px 16px 16px;
+        top: 5%;
+    }
+    .one_har_tovar{
+        padding: 12px 12px 12px 12px;
+    }
+    .one_har_tovar h3{
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    .one_har_tovar h4{
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    .har_tovar button{
+        width: 195px;
+        height: 54px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+    .pre_har_tovar p{
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    .pre_har_bottom{
+        width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .complect_tovar p{
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    .first_comlect_btn{
+        width: 55px;
+        height: 55px;
+        margin-right: 15px;
+    }
+    .first_comlect_btn img{
+        margin-right: 0px;
+    }
+    .second_comlect_btn{
+        width: 219px;
+        height: 55px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .main_tovar_fpv h3{
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 4px;
+    }
+    .main_tovar_fpv h5{
+        margin-top: 16px;
+    }
+    .btn_group_main_tovar_fpv{
+        margin-top: 40px;
+    }
+        .main_tovar_podav h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .main_tovar h1{
+        margin-bottom: 0px;
+    }
+    .main_tovar_anti h5{
+        font-family: Tektur;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23.4px;
+        text-align: left;
+        max-width: 270px;
+    }
+}
+
+.contacts a:hover{
+    text-decoration: none;
+}
+
+.foot a:hover{
+    text-decoration: none;
+}
+
+.main_tovar a:hover{
+    text-decoration: none;
+}
+
+.catalog a:hover{
+    text-decoration: none;
+}
+
+.over_buy a:hover{
+    text-decoration: none;
+}
+
+.goods a:hover{
+    text-decoration: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    width: 252px;
+    height: 8px;
+    background: rgba(123, 42, 24, 0.3);
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  /* Стили для активной части полоски (заполненной части) */
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: rgba(123, 42, 24, 0.3);
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: rgba(123, 42, 24, 0.3);
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent; /* убираем стандартное оформление */
+    border-color: transparent;
+    color: transparent;
+  }
+  
+  /* Стили для активной (заполненной) части полоски */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(123, 42, 24, 0.3);
+  }
+  
+  input[type="range"]::-moz-range-progress {
+    background: white;
+  }
+  
+  input[type="range"]::-ms-fill-lower {
+    background: white;
+  }
+  
+  /* Стили для ползунка (кружка) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px; /* Смещение для центрирования ползунка относительно полоски */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Убираем тень у фокуса для некоторых браузеров */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  input[type="range"]::-ms-track {
+    background: transparent; 
+    border-color: transparent; 
+    color: transparent;
+  }
+  
+  .range_fpv h6{
+    font-family: Tektur;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .range_fpv p{
+    font-family: Tektur;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 8px;
+  }
+
+  .har_tovar a:hover{
+    text-decoration: none;
+  }
+
+  .main_tovar_fpv_new{
+    background: url(../img/back_fpv.avif) center/cover no-repeat;
+  }
+
+.main_tovar_mavic_new{
+    background: url(../img/back_mavic.avif) center/cover no-repeat !important;
+}
+
+.main_tovar_mavic_new h5{
+    color: #fff;
+}
+
+.main_tovar_mavic_new h3{
+    color: #fff;
+}
+
+.main_tovar_mavic_new h4{
+    color: #fff;
+}
+
+.npo_souz_sec{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: url(../img/souz.jpg) center/cover no-repeat;
+}
+
+.npo_souz{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.npo_souz h1{
+    font-family: Tektur;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 78px;  
+    text-align: center;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+
+.npo_souz h2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.one_souz{
+    width: 100%;
+    background: url(../img/drone_souz_bg.png) no-repeat;
+    background-position: 100% 3%;
+    background-size: 50%;
+}
+
+.one_souz_dop{
+    width: 100%;
+    height: 100%;
+    background: url(../img/drone_souz_bg.png) no-repeat;
+    background-position: 100% 100%;
+    background-size: 50%;
+}
+
+.one_souz_dop_new{
+    width: 100%;
+    height: 100%;
+    background: url(../img/drone_souz_bg2.png) no-repeat;
+    background-position: 0% 20%;
+    background-size: 50%;
+}
+
+.one_souz h2{
+    font-family: Tektur;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #520000;
+    margin-bottom: 0px;
+}
+
+.one_souz_har{
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 15px 15px 15px;
+    background-color: #520000;
+    opacity: 0.9;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.price_souz{
+    font-family: Golos;
+    margin-top: 20px;
+    width: max-content;
+    padding: 10px 30px 10px 30px;
+    background-color: #520000;
+    opacity: 0.9;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.one_souz button{
+    margin-top: 20px;
+    font-family: Golos;
+    margin-top: 20px;
+    width: max-content;
+    padding: 10px 30px 10px 30px;
+    background-color: #520000;
+    opacity: 0.9;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+}
+
+.one_souz_img{
+    width: 60%;
+}
+
+.one_souz h3{
+    color: #520000;
+    opacity: 0.9;
+    font-family: Tektur;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+
+.npo_souz a{
+    color: white;
+}
+
+@media(max-width: 992px){
+    .npo_souz h1{
+        font-size: 55px;
+    }
+}
+
+@media(max-width: 576px){
+    .npo_souz h1{
+        font-size: 35px;
+    }
+    .npo_souz h2{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .one_souz_dop{
+        background: none;
+    }
+    .one_souz_dop_new{
+        background: none;
+    }
+    .one_souz{
+        width: 100%;
+        background-position: 0% 0%;
+        background: url(../img/drone_souz_bg2.png) center/cover no-repeat;
+    }
+}
