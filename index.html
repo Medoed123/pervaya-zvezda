@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>НПО «Первая Звезда» — бронекомпозит «Живица» ГОСТ БР1 - БР2</title>
 <meta name="description" content="Научно-производственное объединение «Первая Звезда». Бронекомпозит собственной марки «Живица»: защита для человека, объектов и техники. Классы БР1 - БР2 по ГОСТ. Собственный тир, полный цикл производства.">
+<meta property="og:title" content="НПО «Первая Звезда» — бронекомпозит «Живица»">
+<meta property="og:description" content="Композитные решения класса ГОСТ: шлемы, рольставни, антидроновые сетки, маломерные суда.">
+<meta property="og:image" content="img/p_shlem_hero.jpg">
+<meta property="og:type" content="website">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <link rel="shortcut icon" href="img/ab_shlem.png">
 <link rel="stylesheet" href="css/site.css">
 <style>
@@ -12,11 +17,13 @@
 .quick-cta{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
 .quick-cta a{padding:18px 20px;border-radius:6px;text-align:center;transition:.2s;font-weight:600}
 .quick-cta a:hover{transform:translateY(-4px)}
-.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:40px}
-.cat-card{background:var(--green);color:#fff;padding:32px;border-radius:8px;border-left:4px solid var(--amber);transition:.2s}
-.cat-card:hover{background:var(--green-2);transform:translateY(-4px)}
-.cat-card h3{font-size:22px;margin-bottom:12px}
-.cat-card p{font-size:14px;color:#cdd9d0;margin-bottom:18px}
+.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:40px}
+.cat-card{background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff;padding:36px;border-radius:12px;border:1.5px solid rgba(0,200,120,.4);transition:.3s;position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(8,57,28,.2)}
+.cat-card::before{content:'';position:absolute;top:-50%;right:-50%;width:200px;height:200px;background:radial-gradient(circle,rgba(255,255,255,.05),transparent);border-radius:50%;animation:shimmer-move 8s infinite}
+@keyframes shimmer-move{0%{transform:translate(0,0)}50%{transform:translate(30px,30px)}100%{transform:translate(0,0)}}
+.cat-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(8,57,28,.35);border-color:rgba(0,200,120,.7)}
+.cat-card h3{font-size:22px;margin-bottom:12px;position:relative;z-index:1}
+.cat-card p{font-size:14px;color:#e0f2eb;margin-bottom:18px;position:relative;z-index:1;line-height:1.6}
 .form-modal{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.75);align-items:center;justify-content:center;padding:20px}
 .form-modal.active{display:flex}
 .form-modal-content{background:var(--paper);border-radius:12px;padding:40px;max-width:500px;width:100%;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)}
@@ -161,6 +168,7 @@
 
       <a class="card" href="broneshlem.html">
         <div class="bg" style="background-image:url('img/p_shlem_hero.jpg')"></div><div class="ov"></div>
+        <div class="card-icon" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:#fff"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8m0 2c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z"/></svg></div>
         <h3>Шлем защитный БР-1</h3>
         <p>ГОСТ Р 50744-95. Класс Бр-2, монолитный композит, ручная работа. L/XL, 1,58–1,8 кг.</p>
         <span class="more">Подробнее →</span>
@@ -168,6 +176,7 @@
 
       <a class="card" href="fire-helmet.html">
         <div class="bg" style="background-image:url('img/p_shlem_black.jpg')"></div><div class="ov"></div>
+        <div class="card-icon" style="background:linear-gradient(135deg,#ec4899,#f43f5e);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:#fff"><path d="M12 2c-4.4 0-8 3.6-8 8 0 1.6.5 3.1 1.3 4.4.8 1.4 1 2.9.5 4.3L6 21h12l-.8-2.3c-.5-1.4-.3-2.9.5-4.3.8-1.3 1.3-2.8 1.3-4.4 0-4.4-3.6-8-8-8zm0 2c3.3 0 6 2.7 6 6 0 1.2-.4 2.3-1 3.2l.3 1.5 1.2 3.1H7.5l1.2-3.1.3-1.5c-.6-.9-1-2-1-3.2 0-3.3 2.7-6 6-6z"/></svg></div>
         <h3>Каска пожарная «Живица»</h3>
         <p>ГОСТ Р 53269-2009. Огнезащита 800 °C, класс Бр1, диэлектрик 10 кВ, устойчива к кислотам.</p>
         <span class="more">Подробнее →</span>
@@ -175,6 +184,7 @@
 
       <a class="card" href="rolstavni.html">
         <div class="bg" style="background-image:url('img/p_rolstavni_1.jpg')"></div><div class="ov"></div>
+        <div class="card-icon" style="background:linear-gradient(135deg,#06b6d4,#0891b2);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:#fff"><path d="M3 4h18v2H3V4m0 3h18v2H3V7m0 3h18v8H3v-8m2 2v4h14v-4H5z"/></svg></div>
         <h3>Роллеты композитные БР1 - БР2</h3>
         <p>ГОСТ РВ 8470-010-2021. Защита проёмов. На 40% легче стали, 100+ тыс. циклов, 15–25 лет.</p>
         <span class="more">Подробнее →</span>
@@ -182,6 +192,7 @@
 
       <a class="card" href="armored-vehicles.html">
         <div class="bg" style="background-image:url('img/bronya_auto.png')"></div><div class="ov"></div>
+        <div class="card-icon" style="background:linear-gradient(135deg,#f97316,#ea580c);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:#fff"><path d="M7 3c-1.1 0-2 .9-2 2v8c0 .6.3 1.1.8 1.4L5 18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2l-.8-3.6c.5-.3.8-.8.8-1.4V5c0-1.1-.9-2-2-2H7m0 2h10v8H7V5m1 10h8v2H8v-2z"/></svg></div>
         <h3>Комплекты бронирования техники</h3>
         <p>Защита кабины, днища, двигателя. Класс БрВ-3 (ГОСТ РВ 8470). Индивидуальная разработка.</p>
         <span class="more">Подробнее →</span>
@@ -189,6 +200,7 @@
 
       <a class="card" href="drone-net.html">
         <div class="bg" style="background-image:url('img/main_fon2.png')"></div><div class="ov"></div>
+        <div class="card-icon" style="background:linear-gradient(135deg,#3b82f6,#2563eb);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:#fff"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m1 2v12h12V5H6m1 1v2h2V6H7m4 0v2h2V6h-2m4 0v2h2V6h-2m-8 4v2h2v-2H7m4 0v2h2v-2h-2m4 0v2h2v-2h-2m-8 4v2h2v-2H7m4 0v2h2v-2h-2m4 0v2h2v-2h-2z"/></svg></div>
         <h3>Антидроновая сетка</h3>
         <p>Пассивная защита от FPV и БПЛА. Без питания, 85–90% против FPV, выносит детонацию 3–5 м.</p>
         <span class="more">Подробнее →</span>
@@ -196,6 +208,7 @@
 
       <a class="card" href="composite.html">
         <div class="bg" style="background-image:url('img/p_kompozit_1.jpg')"></div><div class="ov"></div>
+        <div class="card-icon" style="background:linear-gradient(135deg,#10b981,#059669);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:#fff"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/></svg></div>
         <h3>Броневой композит БР1 - БР2</h3>
         <p>Панели, щиты, кожухи под вашу геометрию. Плотность 1,8–2,1 г/см³, прочность 600–1200 МПа.</p>
         <span class="more">Подробнее →</span>
@@ -203,6 +216,7 @@
 
       <a class="card" href="pressforms.html">
         <div class="bg" style="background-image:url('img/p_pressform_1.jpg')"></div><div class="ov"></div>
+        <div class="card-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:#fff"><path d="M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m9 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m-7 8h14v3H6v-3z"/></svg></div>
         <h3>Оснастка штамповая для композитов</h3>
         <p>Пресс-формы для собственного производства. Цикл 45–90 мин, ресурс 5 000–10 000 циклов.</p>
         <span class="more">Подробнее →</span>
@@ -210,6 +224,7 @@
 
       <a class="card" href="vessels.html">
         <div class="bg" style="background-image:url('img/main_fon2.png')"></div><div class="ov"></div>
+        <div class="card-icon" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:#fff"><path d="M3 13.5h2L7 4h10l2 9.5h2L20.3 4H3.7L3 13.5M5 15h14v2H5v-2m1 3h12v2H6v-2z"/></svg></div>
         <h3>Маломерные суда БР1 - БР2</h3>
         <p>Катамараны, лодки, катера, бэки. Не боится морской воды, 40% легче стали, 15–25 лет.</p>
         <span class="more">Подробнее →</span>
