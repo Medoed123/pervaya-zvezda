@@ -69,6 +69,15 @@ header.scrolled{background:rgba(7,28,17,.98);backdrop-filter:blur(12px);box-shad
 .hsocial a[href*="wa.me"]:hover{background:linear-gradient(135deg,#22b14c,#1a8c3a);border-color:#00EFFF;box-shadow:0 0 20px rgba(34,177,76,.6),0 4px 12px rgba(0,0,0,.3);transform:translateY(-2px)}
 .hsocial svg{width:22px;height:22px;fill:currentColor;display:block;position:relative;z-index:1}
 
+/* ===== СОЦИАЛЬНЫЕ ИКОНКИ ВЕЗДЕ ===== */
+.social-icon{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1.5px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;transition:.2s ease;color:#fff;box-shadow:0 4px 12px rgba(0,0,0,.2);position:relative;overflow:hidden}
+.social-icon::before{content:'';position:absolute;inset:0;background:linear-gradient(45deg,transparent,rgba(255,255,255,.1),transparent);transform:translateX(-100%);animation:shimmer 3s infinite}
+.social-icon[href*="t.me"]{border-color:rgba(0,136,204,.4);background:linear-gradient(135deg,#0088cc,#0066aa)}
+.social-icon[href*="t.me"]:hover{background:linear-gradient(135deg,#0088cc,#0066aa);border-color:#00EFFF;box-shadow:0 0 20px rgba(0,136,204,.6),0 4px 12px rgba(0,0,0,.3);transform:translateY(-2px)}
+.social-icon[href*="wa.me"]{border-color:rgba(34,177,76,.4);background:linear-gradient(135deg,#22b14c,#1a8c3a)}
+.social-icon[href*="wa.me"]:hover{background:linear-gradient(135deg,#22b14c,#1a8c3a);border-color:#00EFFF;box-shadow:0 0 20px rgba(34,177,76,.6),0 4px 12px rgba(0,0,0,.3);transform:translateY(-2px)}
+.social-icon svg{width:22px;height:22px;fill:currentColor;display:block;position:relative;z-index:1}
+
 /* ===== HERO (главная) ===== */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;
   background:linear-gradient(120deg,rgba(6,26,15,.96) 0%,rgba(8,57,28,.72) 45%,rgba(8,57,28,.25) 100%),url('../img/main_fon.png') center/cover no-repeat,var(--green)}
